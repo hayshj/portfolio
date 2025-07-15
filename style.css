@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Sora";
+    src: url("./fonts/sora/Sora-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+}
+
+html {
+    box-sizing:border-box;
+}
+
+*,*:before,*:after {
+    box-sizing:inherit;
+}
+
+body{
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#hero{
+    background-color: #121212;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-out;
+    margin-top: 5vh;
+    position: relative;
+    z-index: 1;
+}
+
+#hero-text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 72pt;
+    margin: 0;
+    z-index: 1;
+    font: 'Sora', sans-serif;
+}
+
+#subtitle{
+    font-size: 36pt;
+    margin: 0;
+    z-index: 1;
+}
+
+#ctab{
+    background-color: rgba(153, 0, 255, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 10vh;
+    width: 85vw;
+    max-width: 250px;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#ctab:hover{
+    background-color: rgba(153, 0, 255, 0.5);
+}
+
+#ctab text{
+    font-size: inherit;
+    font-size: 16pt;
+}
+
+#gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:
+        radial-gradient(circle at 20% 45%, rgba(0, 102, 255, 0.4), transparent 30%),
+        radial-gradient(circle at 42.5% 75%, rgba(102, 0, 255, 0.4), transparent 40%),
+        radial-gradient(circle at 70% 30%, rgba(153, 0, 255, 0.4), transparent 30%);
+    background-blend-mode: screen;
+    filter: blur(120px);
+    z-index: 0;
+  }
+
+#navbar{
+    position: fixed;
+    height: 10vh;
+    width: 80%;
+    background-color: #121212;  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLogo{
+    width: 60%;
+    padding-left: 20px;
+}
+
+#navLogoText{
+    font-weight: 800;
+    font-size: 32pt;
+    letter-spacing: -.3em;
+}
+
+#navLinks{
+    width: 40%;
+}
+
+#navLinks ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navLinks li{
+    list-style-type: none;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.project{
+    height: 90vh;
+    width: 85vw;
+    background-color: rgba(0, 0, 0, 0.2);    
+    z-index: inherit;
+    margin-bottom: 15vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.projectImage{
+    height: 85%;
+    width: 45%;
+    border-radius: 20px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: top;
+    z-index: inherit;
+}
+
+.projectInfo{
+    height: 85%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    z-index: inherit;
+}
+
+.projectInfo h3{
+    margin: 0;
+}
+
+.projectHeader{
+    font-size: 36pt;
+    font-weight: 600;
+    z-index: inherit;
+    text-align: center;
+}
+
+.projectDescription{
+    font-size: 16pt;
+    font-weight: 200;
+    margin-top: 20px;
+    z-index: inherit;
+}
+
+.projectButton{
+    background-color: rgba(153, 0, 255, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 10vh;
+    width: 85vw;
+    max-width: 250px;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: calc(.075 * 90vh);
+    left: 55%;
+    transform: translateX(55%);
+    z-index: 1;
+}
+
+.projectButton:hover{
+    background-color: rgba(153, 0, 255, 0.5);
+}
