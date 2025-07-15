@@ -144,7 +144,8 @@ a{
 }
 
 .project{
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     width: 85vw;
     background-color: rgba(0, 0, 0, 0.2);    
     z-index: inherit;
@@ -159,7 +160,7 @@ a{
 }
 
 .projectImage{
-    height: 85%;
+    height: calc(.85 * 90vh);
     width: 45%;
     border-radius: 20px;
     object-fit: cover;
@@ -217,3 +218,105 @@ a{
 .projectButton:hover{
     background-color: rgba(153, 0, 255, 0.5);
 }
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    #hero-text {
+        font-size: 48pt;
+    }
+  
+    #subtitle {
+        font-size: 24pt;
+        text-align: center;
+        padding: 0 10px;
+    }
+  
+    #ctab {
+        width: 90vw;
+        height: 8vh;
+    }
+  
+    #ctab text {
+      font-size: 14pt;
+    }
+  
+    #navLogoText {
+        font-size: 24pt;
+        letter-spacing: -0.2em;
+    }
+  
+    #navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+  
+    #navLinks {
+        display: none;
+    }
+  
+    .project {
+        flex-direction: column-reverse;
+        width: 95vw;
+        min-height: auto;
+        padding: 5vh 0;
+    }
+  
+    .projectImage {
+        width: 90%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  
+    .projectInfo {
+        width: 90%;
+        align-items: center;
+    }
+  
+    .projectHeader {
+        font-size: 28pt;
+    }
+  
+    .projectDescription {
+        font-size: 14pt;
+    }
+  
+    .projectButton {
+        position: static;
+        transform: none;
+        margin: 20px auto 0 auto;
+    }
+  }
+  
+  /* Phone screens (480px and below) */
+  @media (max-width: 480px) {
+    #hero-text {
+        font-size: 32pt;
+        text-align: center;
+    }
+  
+    #subtitle {
+        font-size: 18pt;
+    }
+  
+    .projectHeader {
+        font-size: 24pt;
+    }
+  
+    .projectDescription {
+        font-size: 12pt;
+    }
+  
+    #ctab {
+        height: 7vh;
+    }
+  
+    #ctab text {
+        font-size: 12pt;
+    }
+  
+    #navLogoText {
+        font-size: 20pt;
+    }
+}
+  
